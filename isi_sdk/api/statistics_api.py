@@ -149,7 +149,7 @@ class StatisticsApi(object):
             files=local_var_files,
             response_type='StatisticsCurrent',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -161,7 +161,7 @@ class StatisticsApi(object):
         Retrieve stats.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_statistics_history(async=True)
+        >>> thread = api.get_statistics_history(is_async=True)
         >>> result = thread.get()
 
         :param async bool

@@ -38,11 +38,11 @@ class AntivirusApi(object):
 
         Create new antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_policy(antivirus_policy, async=True)
+        asynchronous HTTP request, please pass is_is_async=True
+        >>> thread = api.create_antivirus_policy(antivirus_policy, is_is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusPolicyCreateParams antivirus_policy: (required)
         :return: CreateResponse
                  If the method is called asynchronously,
@@ -60,11 +60,11 @@ class AntivirusApi(object):
 
         Create new antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_policy_with_http_info(antivirus_policy, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_antivirus_policy_with_http_info(antivirus_policy, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusPolicyCreateParams antivirus_policy: (required)
         :return: CreateResponse
                  If the method is called asynchronously,
@@ -126,7 +126,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='CreateResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -137,11 +137,11 @@ class AntivirusApi(object):
 
         Manually scan a file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_scan_item(antivirus_scan_item, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_antivirus_scan_item(antivirus_scan_item, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusScanItem antivirus_scan_item: (required)
         :return: CreateAntivirusScanItemResponse
                  If the method is called asynchronously,
@@ -159,11 +159,11 @@ class AntivirusApi(object):
 
         Manually scan a file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_scan_item_with_http_info(antivirus_scan_item, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_antivirus_scan_item_with_http_info(antivirus_scan_item, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusScanItem antivirus_scan_item: (required)
         :return: CreateAntivirusScanItemResponse
                  If the method is called asynchronously,
@@ -225,7 +225,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='CreateAntivirusScanItemResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -236,11 +236,11 @@ class AntivirusApi(object):
 
         Create new antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_server(antivirus_server, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_antivirus_server(antivirus_server, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusServerCreateParams antivirus_server: (required)
         :return: CreateResponse
                  If the method is called asynchronously,
@@ -258,11 +258,11 @@ class AntivirusApi(object):
 
         Create new antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_antivirus_server_with_http_info(antivirus_server, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_antivirus_server_with_http_info(antivirus_server, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusServerCreateParams antivirus_server: (required)
         :return: CreateResponse
                  If the method is called asynchronously,
@@ -324,7 +324,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='CreateResponse',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -335,11 +335,11 @@ class AntivirusApi(object):
 
         Delete all antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_policies(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_policies(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -356,11 +356,11 @@ class AntivirusApi(object):
 
         Delete all antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_policies_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_policies_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -415,7 +415,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -426,11 +426,11 @@ class AntivirusApi(object):
 
         Delete an antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_policy(antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_policy(antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_policy_id: Delete an antivirus scan policy. (required)
         :return: None
                  If the method is called asynchronously,
@@ -448,11 +448,11 @@ class AntivirusApi(object):
 
         Delete an antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_policy_with_http_info(antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_policy_with_http_info(antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_policy_id: Delete an antivirus scan policy. (required)
         :return: None
                  If the method is called asynchronously,
@@ -514,7 +514,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -525,11 +525,11 @@ class AntivirusApi(object):
 
         Delete an antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_server(antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_server(antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_server_id: Delete an antivirus server entry. (required)
         :return: None
                  If the method is called asynchronously,
@@ -547,11 +547,11 @@ class AntivirusApi(object):
 
         Delete an antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_server_with_http_info(antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_server_with_http_info(antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_server_id: Delete an antivirus server entry. (required)
         :return: None
                  If the method is called asynchronously,
@@ -613,7 +613,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -624,11 +624,11 @@ class AntivirusApi(object):
 
         Delete all antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_servers(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_servers(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -645,11 +645,11 @@ class AntivirusApi(object):
 
         Delete all antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_antivirus_servers_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_antivirus_servers_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -704,7 +704,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -715,11 +715,11 @@ class AntivirusApi(object):
 
         Delete one antivirus scan report, and all of its associated threat reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_reports_scan(reports_scan_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_reports_scan(reports_scan_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_scan_id: Delete one antivirus scan report, and all of its associated threat reports. (required)
         :return: None
                  If the method is called asynchronously,
@@ -737,11 +737,11 @@ class AntivirusApi(object):
 
         Delete one antivirus scan report, and all of its associated threat reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_reports_scan_with_http_info(reports_scan_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_reports_scan_with_http_info(reports_scan_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_scan_id: Delete one antivirus scan report, and all of its associated threat reports. (required)
         :return: None
                  If the method is called asynchronously,
@@ -803,7 +803,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -814,11 +814,11 @@ class AntivirusApi(object):
 
         Delete antivirus scan reports, and any threat reports associated with those scans.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_reports_scans(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_reports_scans(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param int age: An amount of time in seconds. If present, only reports older than this age are deleted.
         :return: None
                  If the method is called asynchronously,
@@ -836,11 +836,11 @@ class AntivirusApi(object):
 
         Delete antivirus scan reports, and any threat reports associated with those scans.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.delete_reports_scans_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.delete_reports_scans_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param int age: An amount of time in seconds. If present, only reports older than this age are deleted.
         :return: None
                  If the method is called asynchronously,
@@ -898,7 +898,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -909,11 +909,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_policy(antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_policy(antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_policy_id: Retrieve one antivirus scan policy. (required)
         :return: AntivirusPolicies
                  If the method is called asynchronously,
@@ -931,11 +931,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_policy_with_http_info(antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_policy_with_http_info(antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_policy_id: Retrieve one antivirus scan policy. (required)
         :return: AntivirusPolicies
                  If the method is called asynchronously,
@@ -997,7 +997,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusPolicies',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1008,11 +1008,11 @@ class AntivirusApi(object):
 
         Retrieve the quarantine status of the file at the specified path.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_quarantine_path(antivirus_quarantine_path, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_quarantine_path(antivirus_quarantine_path, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_quarantine_path: Retrieve the quarantine status of the file at the specified path. (required)
         :return: AntivirusQuarantine
                  If the method is called asynchronously,
@@ -1030,11 +1030,11 @@ class AntivirusApi(object):
 
         Retrieve the quarantine status of the file at the specified path.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_quarantine_path_with_http_info(antivirus_quarantine_path, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_quarantine_path_with_http_info(antivirus_quarantine_path, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_quarantine_path: Retrieve the quarantine status of the file at the specified path. (required)
         :return: AntivirusQuarantine
                  If the method is called asynchronously,
@@ -1096,7 +1096,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusQuarantine',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1107,11 +1107,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_server(antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_server(antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_server_id: Retrieve one antivirus server entry. (required)
         :return: AntivirusServers
                  If the method is called asynchronously,
@@ -1129,11 +1129,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_server_with_http_info(antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_server_with_http_info(antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str antivirus_server_id: Retrieve one antivirus server entry. (required)
         :return: AntivirusServers
                  If the method is called asynchronously,
@@ -1195,7 +1195,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusServers',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1206,11 +1206,11 @@ class AntivirusApi(object):
 
         Retrieve the Antivirus settings.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_settings(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_settings(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: AntivirusSettings
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1227,11 +1227,11 @@ class AntivirusApi(object):
 
         Retrieve the Antivirus settings.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_antivirus_settings_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_antivirus_settings_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :return: AntivirusSettings
                  If the method is called asynchronously,
                  returns the request thread.
@@ -1286,7 +1286,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusSettings',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1297,11 +1297,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus scan report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_scan(reports_scan_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_scan(reports_scan_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_scan_id: Retrieve one antivirus scan report. (required)
         :return: ReportsScans
                  If the method is called asynchronously,
@@ -1319,11 +1319,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus scan report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_scan_with_http_info(reports_scan_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_scan_with_http_info(reports_scan_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_scan_id: Retrieve one antivirus scan report. (required)
         :return: ReportsScans
                  If the method is called asynchronously,
@@ -1385,7 +1385,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='ReportsScans',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1396,11 +1396,11 @@ class AntivirusApi(object):
 
         List antivirus scan reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_scans(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_scans(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param str status: If present, only scan reports with this status will be returned.
         :param str resume: Continue returning results from previous call using this token (token should come from the previous call, resume cannot be used with other options).
@@ -1423,11 +1423,11 @@ class AntivirusApi(object):
 
         List antivirus scan reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_scans_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_scans_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param str status: If present, only scan reports with this status will be returned.
         :param str resume: Continue returning results from previous call using this token (token should come from the previous call, resume cannot be used with other options).
@@ -1502,7 +1502,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='ReportsScansExtended',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1513,11 +1513,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus threat report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_threat(reports_threat_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_threat(reports_threat_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_threat_id: Retrieve one antivirus threat report. (required)
         :return: ReportsThreats
                  If the method is called asynchronously,
@@ -1535,11 +1535,11 @@ class AntivirusApi(object):
 
         Retrieve one antivirus threat report.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_threat_with_http_info(reports_threat_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_threat_with_http_info(reports_threat_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str reports_threat_id: Retrieve one antivirus threat report. (required)
         :return: ReportsThreats
                  If the method is called asynchronously,
@@ -1601,7 +1601,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='ReportsThreats',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1612,11 +1612,11 @@ class AntivirusApi(object):
 
         List antivirus threat reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_threats(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_threats(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param str scan_id: If present, only returns threat reports associated with the given scan report.
         :param str resume: Continue returning results from previous call using this token (token should come from the previous call, resume cannot be used with other options).
@@ -1640,11 +1640,11 @@ class AntivirusApi(object):
 
         List antivirus threat reports.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.get_reports_threats_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.get_reports_threats_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param str scan_id: If present, only returns threat reports associated with the given scan report.
         :param str resume: Continue returning results from previous call using this token (token should come from the previous call, resume cannot be used with other options).
@@ -1722,7 +1722,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='ReportsThreatsExtended',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1733,11 +1733,11 @@ class AntivirusApi(object):
 
         List antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_antivirus_policies(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.list_antivirus_policies(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param int limit: Return no more than this many results at once (see resume).
         :param str dir: The direction of the sort.
@@ -1758,11 +1758,11 @@ class AntivirusApi(object):
 
         List antivirus scan policies.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_antivirus_policies_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.list_antivirus_policies_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param int limit: Return no more than this many results at once (see resume).
         :param str dir: The direction of the sort.
@@ -1831,7 +1831,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusPoliciesExtended',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1842,11 +1842,11 @@ class AntivirusApi(object):
 
         List antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_antivirus_servers(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.list_antivirus_servers(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param int limit: Return no more than this many results at once (see resume).
         :param str dir: The direction of the sort.
@@ -1867,11 +1867,11 @@ class AntivirusApi(object):
 
         List antivirus servers.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.list_antivirus_servers_with_http_info(async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.list_antivirus_servers_with_http_info(is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param str sort: The field that will be used for sorting.
         :param int limit: Return no more than this many results at once (see resume).
         :param str dir: The direction of the sort.
@@ -1940,7 +1940,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type='AntivirusServersExtended',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -1951,11 +1951,11 @@ class AntivirusApi(object):
 
         Modify an antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_policy(antivirus_policy, antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_policy(antivirus_policy, antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusPolicy antivirus_policy: (required)
         :param str antivirus_policy_id: Modify an antivirus scan policy. (required)
         :return: None
@@ -1974,11 +1974,11 @@ class AntivirusApi(object):
 
         Modify an antivirus scan policy.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_policy_with_http_info(antivirus_policy, antivirus_policy_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_policy_with_http_info(antivirus_policy, antivirus_policy_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusPolicy antivirus_policy: (required)
         :param str antivirus_policy_id: Modify an antivirus scan policy. (required)
         :return: None
@@ -2047,7 +2047,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2058,11 +2058,11 @@ class AntivirusApi(object):
 
         Set the quarantine status of the file at the specified path.  Use either an empty object {} in the request body or {\"quarantined\":true} to quarantine the file, and {\"quarantined\":false} to unquarantine the file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_quarantine_path(antivirus_quarantine_path_params, antivirus_quarantine_path, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_quarantine_path(antivirus_quarantine_path_params, antivirus_quarantine_path, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusQuarantinePathParams antivirus_quarantine_path_params: (required)
         :param str antivirus_quarantine_path: Set the quarantine status of the file at the specified path.  Use either an empty object {} in the request body or {\"quarantined\":true} to quarantine the file, and {\"quarantined\":false} to unquarantine the file. (required)
         :return: None
@@ -2081,11 +2081,11 @@ class AntivirusApi(object):
 
         Set the quarantine status of the file at the specified path.  Use either an empty object {} in the request body or {\"quarantined\":true} to quarantine the file, and {\"quarantined\":false} to unquarantine the file.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_quarantine_path_with_http_info(antivirus_quarantine_path_params, antivirus_quarantine_path, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_quarantine_path_with_http_info(antivirus_quarantine_path_params, antivirus_quarantine_path, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusQuarantinePathParams antivirus_quarantine_path_params: (required)
         :param str antivirus_quarantine_path: Set the quarantine status of the file at the specified path.  Use either an empty object {} in the request body or {\"quarantined\":true} to quarantine the file, and {\"quarantined\":false} to unquarantine the file. (required)
         :return: None
@@ -2154,7 +2154,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2165,11 +2165,11 @@ class AntivirusApi(object):
 
         Modify an antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_server(antivirus_server, antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_server(antivirus_server, antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusServer antivirus_server: (required)
         :param str antivirus_server_id: Modify an antivirus server entry. (required)
         :return: None
@@ -2188,11 +2188,11 @@ class AntivirusApi(object):
 
         Modify an antivirus server entry.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_server_with_http_info(antivirus_server, antivirus_server_id, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_server_with_http_info(antivirus_server, antivirus_server_id, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusServer antivirus_server: (required)
         :param str antivirus_server_id: Modify an antivirus server entry. (required)
         :return: None
@@ -2261,7 +2261,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -2272,11 +2272,11 @@ class AntivirusApi(object):
 
         Modify the Antivirus settings. All input fields are optional, but one or more must be supplied.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_settings(antivirus_settings, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_settings(antivirus_settings, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusSettingsSettings antivirus_settings: (required)
         :return: None
                  If the method is called asynchronously,
@@ -2294,11 +2294,11 @@ class AntivirusApi(object):
 
         Modify the Antivirus settings. All input fields are optional, but one or more must be supplied.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.update_antivirus_settings_with_http_info(antivirus_settings, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.update_antivirus_settings_with_http_info(antivirus_settings, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param AntivirusSettingsSettings antivirus_settings: (required)
         :return: None
                  If the method is called asynchronously,
@@ -2360,7 +2360,7 @@ class AntivirusApi(object):
             files=local_var_files,
             response_type=None,  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),

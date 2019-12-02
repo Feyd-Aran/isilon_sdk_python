@@ -38,11 +38,11 @@ class ClusterNodesApi(object):
 
         Add a drive to a node.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_drives_drive_add_item(drives_drive_add_item, lnn, driveid, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_drives_drive_add_item(drives_drive_add_item, lnn, driveid, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param Empty drives_drive_add_item: (required)
         :param int lnn: (required)
         :param str driveid: (required)
@@ -51,7 +51,7 @@ class ClusterNodesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('is_async'):
             return self.create_drives_drive_add_item_with_http_info(drives_drive_add_item, lnn, driveid, **kwargs)  # noqa: E501
         else:
             (data) = self.create_drives_drive_add_item_with_http_info(drives_drive_add_item, lnn, driveid, **kwargs)  # noqa: E501
@@ -62,11 +62,11 @@ class ClusterNodesApi(object):
 
         Add a drive to a node.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
+        asynchronous HTTP request, please pass is_async=True
         >>> thread = api.create_drives_drive_add_item_with_http_info(drives_drive_add_item, lnn, driveid, async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param Empty drives_drive_add_item: (required)
         :param int lnn: (required)
         :param str driveid: (required)
@@ -76,7 +76,7 @@ class ClusterNodesApi(object):
         """
 
         all_params = ['drives_drive_add_item', 'lnn', 'driveid']  # noqa: E501
-        all_params.append('async')
+        all_params.append('is_async')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -142,7 +142,7 @@ class ClusterNodesApi(object):
             files=local_var_files,
             response_type='Empty',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('is_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -153,11 +153,11 @@ class ClusterNodesApi(object):
 
         Start a drive firmware update.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_drives_drive_firmware_update_item(drives_drive_firmware_update_item, lnn, driveid, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_drives_drive_firmware_update_item(drives_drive_firmware_update_item, lnn, driveid, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param DrivesDriveFirmwareUpdateItem drives_drive_firmware_update_item: (required)
         :param int lnn: (required)
         :param str driveid: (required)
@@ -166,7 +166,7 @@ class ClusterNodesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('is_async'):
             return self.create_drives_drive_firmware_update_item_with_http_info(drives_drive_firmware_update_item, lnn, driveid, **kwargs)  # noqa: E501
         else:
             (data) = self.create_drives_drive_firmware_update_item_with_http_info(drives_drive_firmware_update_item, lnn, driveid, **kwargs)  # noqa: E501
@@ -177,11 +177,11 @@ class ClusterNodesApi(object):
 
         Start a drive firmware update.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_drives_drive_firmware_update_item_with_http_info(drives_drive_firmware_update_item, lnn, driveid, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_drives_drive_firmware_update_item_with_http_info(drives_drive_firmware_update_item, lnn, driveid,is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param DrivesDriveFirmwareUpdateItem drives_drive_firmware_update_item: (required)
         :param int lnn: (required)
         :param str driveid: (required)
@@ -191,7 +191,7 @@ class ClusterNodesApi(object):
         """
 
         all_params = ['drives_drive_firmware_update_item', 'lnn', 'driveid']  # noqa: E501
-        all_params.append('async')
+        all_params.append('is_async')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
         all_params.append('_request_timeout')
@@ -257,7 +257,7 @@ class ClusterNodesApi(object):
             files=local_var_files,
             response_type='Empty',  # noqa: E501
             auth_settings=auth_settings,
-            async=params.get('async'),
+            is_async=params.get('is_async'),
             _return_http_data_only=params.get('_return_http_data_only'),
             _preload_content=params.get('_preload_content', True),
             _request_timeout=params.get('_request_timeout'),
@@ -268,11 +268,11 @@ class ClusterNodesApi(object):
 
         Format a drive for use by OneFS.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_drives_drive_format_item(drives_drive_format_item, lnn, driveid, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_drives_drive_format_item(drives_drive_format_item, lnn, driveid, is_async=True)
         >>> result = thread.get()
 
-        :param async bool
+        :param is_async bool
         :param DrivesDriveFormatItem drives_drive_format_item: (required)
         :param int lnn: (required)
         :param str driveid: (required)
@@ -281,7 +281,7 @@ class ClusterNodesApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        if kwargs.get('async'):
+        if kwargs.get('is_async'):
             return self.create_drives_drive_format_item_with_http_info(drives_drive_format_item, lnn, driveid, **kwargs)  # noqa: E501
         else:
             (data) = self.create_drives_drive_format_item_with_http_info(drives_drive_format_item, lnn, driveid, **kwargs)  # noqa: E501
@@ -292,8 +292,8 @@ class ClusterNodesApi(object):
 
         Format a drive for use by OneFS.  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async=True
-        >>> thread = api.create_drives_drive_format_item_with_http_info(drives_drive_format_item, lnn, driveid, async=True)
+        asynchronous HTTP request, please pass is_async=True
+        >>> thread = api.create_drives_drive_format_item_with_http_info(drives_drive_format_item, lnn, driveid, is_async=True)
         >>> result = thread.get()
 
         :param async bool
